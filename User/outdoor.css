@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #e6ebe6; 
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    padding: 20px;
+    background-color: #27AE60;
+    color: #fff;
+}
+
+.top-nav .logo img {
+    margin-left: 35px;
+    height: 50px;
+}
+
+.top-nav .logo p {
+    margin-left: 12px;
+}
+
+.top-nav .menu-items ul {
+    display: flex;
+    list-style: none;
+    margin-left: 300px;
+}
+
+.top-nav .menu-items ul li {
+    margin: 0 15px;
+    position: relative; 
+}
+
+.top-nav .menu-items ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 50px;
+}
+
+.menu-items ul li ul.dropdown {
+    width: 100%;
+    background: #27AE60;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+.menu-items ul li ul.dropdown li {
+    display: block;
+}
+
+.menu-items ul a:hover {
+    background: #27AE60;
+}
+
+.menu-items ul li:hover ul.dropdown {
+    display: block;
+}
+
+.nav-buttons .btn {
+    width: 100px;
+    height: 35px;
+    background: #4abb79;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 10px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.nav-buttons .btn:hover {
+    background: #1e8449;
+}
+
+.nav-buttons .btn.white-btn {
+    background: #4abb79;
+    color: #fff;
+}
+
+.nav-buttons .btn.white-btn:hover {
+    background: #1e8449;
+}
+
+.header {
+    text-align: center;
+    color: #000;
+    background-color: #e6ebe6;
+    padding: 20px 0;
+    margin: 20px 0;
+    margin-top: -20px;
+}
+
+.container {
+    background-color: #e6ebe6;
+    margin-bottom: 10px;
+}
+
+.container .row {
+    margin-left: -20px;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.img-fluid:hover {
+    transform: scale(1.1);
+}
+
+.col-md-8 h3, .col-md-12 h3 {
+    color: #223d2d;
+}
+
+.col-md-8 a {
+    text-decoration: none;
+    color: #27AE60;
+}

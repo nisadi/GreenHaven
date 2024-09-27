@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    min-height: 100vh;
+    background-color: #e6ebe6;
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 250px;
+    background-color: #124125;
+    color: #fff;
+    padding: 30px;
+    height: auto;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 30px;
+}
+
+.sidebar ul li a {
+    color: #e6ebe6;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.sidebar ul li a:hover {
+    color: #bebebe;
+}
+
+/* Main content styling */
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-left: 50px;
+}
+
+header h1 {
+    font-size: 35px;
+    color: #000000;
+}
+
+header .user-info {
+    display: flex;
+    align-items: center;
+}
+
+header .user-info span {
+    margin-right: 20px;
+    font-size: 16px;
+    color: #000000;
+}
+
+header .logout {
+    text-decoration: none;
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+header .logout:hover {
+    color: #c0392b;
+}
+
+/* Dashboard cards */
+.dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-left: 50px;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card h3 {
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 24px;
+    color: #27AE60;
+}
+
+.table_heading{
+    margin-left: 50px;
+}
+
+table, th, td {
+    margin-left: 50px;
+    width: 75vw;
+    height: 3vh;
+    padding: 1rem;
+    box-shadow: 0.1rem .1rem #fff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.table_body{
+    overflow: auto;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+tbody tr:hover{
+    background-color: #bebebe;
+}
+
+.status{
+    padding: .4rem 0;
+    border-radius: 2rem;
+}
+
+.status.delivered{
+    background-color: #78cf9c;
+    color: #124125;
+}
+
+.status.shipped{
+    background-color: #7888cf;
+    color: #151241;
+}
+
+.status.packing{
+    background-color: #cf78c3;
+    color: #411239;
+}
+
+.status.cancelled{
+    background-color: #cf7878;
+    color: #411212;
+}

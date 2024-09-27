@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenHaven</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>GreenHaven </h2><h2>Admin</h2>
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="orders.html">Orders</a></li>
+            <li><a href="customer.html">Customers</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="#">Analytics</a></li>
+            <li><a href="#">Settings</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <h1>Orders</h1>
+            <div class="user-info">
+                <span>Welcome, Admin</span>
+                <a href="#" class="logout">Logout</a>
+            </div>
+        </header>
+
+        <section class="dashboard-cards">
+            <div class="card">
+                <h3>Total Sales</h3>
+                <p>$12,345</p>
+            </div>
+            <div class="card">
+                <h3>Orders Pending</h3>
+                <p>15 Orders</p>
+            </div>
+            <div class="card">
+                <h3>Total Products</h3>
+                <p>120 Plants</p>
+            </div>
+            <div class="card">
+                <h3>New Customers</h3>
+                <p>25 Customers</p>
+            </div>
+        </section>
+        <br><br><br>
+        <main class="table">
+            <section class="table_heading">
+                <h1>Customer's Orders</h1>
+            </section>
+            <section class="table_body">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Order ID</th>
+                            <th>Order Date</th>
+                            <th>Customer ID</th>
+                            <th>Location</th>
+                            <th>Total</th>
+                            <th>Payment Status</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>1001</th>
+                            <th>26.09.2024</th>
+                            <th>101</th>
+                            <th>Kandy</th>
+                            <th>$150</th>
+                            <th>COD</th>
+                            <th class="status delivered">Delivered</th>
+                        </tr>
+                        <tr>
+                            <th>1002</th>
+                            <th>26.09.2024</th>
+                            <th>102</th>
+                            <th>Kandy</th>
+                            <th>$450</th>
+                            <th>Online</th>
+                            <th class="status shipped">Shipped</th>
+                        </tr>
+                        <tr>
+                            <th>1003</th>
+                            <th>26.09.2024</th>
+                            <th>103</th>
+                            <th>Kandy</th>
+                            <th>$50</th>
+                            <th>COD</th>
+                            <th class="status packing">Packing</th>
+                        </tr>
+                        <tr>
+                            <th>1001</th>
+                            <th>26.09.2024</th>
+                            <th>101</th>
+                            <th>Kandy</th>
+                            <th>$150</th>
+                            <th>COD</th>
+                            <th class="status cancelled">Cancelled</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+    
+</body>
+</html>
