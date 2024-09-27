@@ -50,7 +50,7 @@
                 <h3>Vegetable Plants</h3>
                 <p>GreenHaven is dedicated to providing sustainable solutions for a greener future. Our services include eco-friendly landscaping, renewable energy solutions, and environmental consulting.</p>
                 <p>Our mission is to create a sustainable environment for future generations by promoting green practices and technologies.</p>
-                <a href="#">See more</a>
+                <a href="#">See more awi</a>
             </div>
             <div class="col-md-4">
                 <img src="image1.avif" alt="Outdoor Image" class="img-fluid">
