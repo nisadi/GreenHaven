@@ -9,6 +9,18 @@
     <title>GreenHaven</title>
 </head>
 <body>
+<?php
+include '../include/connection.php';
+session_start(); // Start session to access session variables
+
+// Check if the session variable 'status' exists
+if (isset($_SESSION['status']) && $_SESSION['status'] == "Email / Password is Invalid") {
+    echo "<script>alert('Your username or password is incorrect');</script>";
+    
+    // Unset the status after showing the alert to avoid repeated alerts
+    unset($_SESSION['status']);
+}
+?>
     <nav class="top-nav">
         <div class="logo">
             <a href="home.php"><img src="logo.jpg" alt="GreenHaven Logo"></a>
@@ -16,8 +28,8 @@
         </div>
         <div class="menu-items">
             <ul>
-                <li><a href="home.php" class="link">Home</a></li>
-                <li><a href="#" class="link">Categories</a></li>
+            <li><a href="home.php" class="link">Home</a></li>
+                <li><a href="category.php" class="link">Categories</a></li>
                 <li><a href="aboutus.php" class="link active">About</a></li>
                 <li><a href="services.php" class="link">Services</a></li>
                 <li><a href="contactus.php" class="link">Contact</a></li>
@@ -30,19 +42,19 @@
     </nav>
 
     <div class="form-box">
-        <div class="login-container" id="login-container">
+        <form class="login-container" id="login-container" action="submitform.php" method="post">
             <div class="top">
                 <span>Don't have an account? <a href="#" onclick="register()">Sign Up</a></span>
                 <header>Login</header>
             </div>
             <div class="input-box">       
-                <input type="text" class="input-field" placeholder="Username or Email">
+                <input type="text" name="email" class="input-field" placeholder="Username or Email">
             </div>
             <div class="input-box">
-                <input type="password" class="input-field" placeholder="Password">
+                <input type="password" name="password" class="input-field" placeholder="Password">
             </div>
             <div class="input-box">
-                <input type="submit" class="submit" value="Sign In">
+                <input type="submit" name="loginbtn" class="submit" value="Sign In">
             </div>
             <div class="two-col">
                 <div class="one">
@@ -53,35 +65,35 @@
                     <label><a href="#">Forgot password?</a></label>
                 </div>
             </div>
-        </div>
+        </form>
 
-        <div class="register-container" id="register-container">
+        <form class="register-container" id="register-container" action="submitform.php" method="post">
             <div class="top">
-                <span>Have an account? <a href="#" onclick="login()">Login</a></span>
+                <span>Have an account? <a href="login.php" onclick="login()">Login</a></span>
                 <header>Sign Up</header>
             </div>
             <div class="two-forms">
                 <div class="input-box">
-                    <input type="text" class="input-field" placeholder="First name">
+                    <input type="text" name="fname" class="input-field" placeholder="First name" required>
                 </div>
                 <div class="input-box">
-                    <input type="text" class="input-field" placeholder="Last name">
+                    <input type="text" name="lname" class="input-field" placeholder="Last name" required>
                 </div>
             </div>
             <div class="input-box">
-                <input type="text" class="input-field" placeholder="Address">
+                <input type="text" name="address" class="input-field" placeholder="Address" required>
             </div>
             <div class="input-box">
-                <input type="text" class="input-field" placeholder="Contact">
+                <input type="text" name="contact" class="input-field" placeholder="Contact" required>
             </div>
             <div class="input-box">
-                <input type="text" class="input-field" placeholder="Email">
+                <input type="text" name="email" class="input-field" placeholder="Email" required>
             </div>
             <div class="input-box">
-                <input type="password" class="input-field" placeholder="Password">
+                <input type="password" name="password" class="input-field" placeholder="Password" required>
             </div>
             <div class="input-box">
-                <input type="submit" class="submit" value="Register">
+                <input type="submit" name="register" class="submit" value="Register">
             </div>
             <div class="two-col">
                 <div class="one">
@@ -92,7 +104,7 @@
                     <label><a href="#">Terms & conditions</a></label>
                 </div>
             </div>
-        </div>
+        </form>
     </div>
     <footer>
         <nav>
@@ -125,5 +137,8 @@
             login(); 
         }
     </script>
+<?php
+    mysqli_close($conn);
+?>
 </body>
 </html>

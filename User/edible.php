@@ -17,11 +17,13 @@
         </div>
         <div class="menu-items">
             <ul>
-                <li><a href="home.php" class="link">Home</a></li>
-                <li><a href="#" class="link">Categories</a></li>
+            <li><a href="home.php" class="link">Home</a></li>
+                <li><a href="category.php" class="link">Categories</a></li>
                 <li><a href="aboutus.php" class="link active">About</a></li>
                 <li><a href="services.php" class="link">Services</a></li>
                 <li><a href="contactus.php" class="link">Contact</a></li>
+                <li><a href="#" class="link"><i class="fa-solid fa-cart-shopping"></i></li></a>
+                <li><a href="profile.php" class="link"><i class="fa-solid fa-user"></i></li></a>
             </ul>
         </div>
         <div class="nav-buttons">
@@ -50,7 +52,7 @@
                 <h3>Vegetable Plants</h3>
                 <p>GreenHaven is dedicated to providing sustainable solutions for a greener future. Our services include eco-friendly landscaping, renewable energy solutions, and environmental consulting.</p>
                 <p>Our mission is to create a sustainable environment for future generations by promoting green practices and technologies.</p>
-                <a href="#">See more awi</a>
+                <a href="#">See more</a>
             </div>
             <div class="col-md-4">
                 <img src="image1.avif" alt="Outdoor Image" class="img-fluid">

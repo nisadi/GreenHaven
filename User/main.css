@@ -33,12 +33,12 @@ body
 {
     display: flex;
     list-style: none;
-    margin-left: 300px;
+    margin-left: 280px;
 }
 
 .top-nav .menu-items ul li 
 {
-    margin: 0 15px;
+    margin: 0 6px;
     position: relative; 
 }
 

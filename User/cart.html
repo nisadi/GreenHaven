@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Your Cart</h1>
+        <div class="cart-items" id="cart-items"></div>
+        <div class="cart-total">
+            <h2>Total: Rs.<span id="cart-total">0</span></h2>
+        </div>
+        <button class="btn" onclick="clearCart()">Clear Cart</button>
+        <a href="/Product/products.html" class="cart-link">Back to Products</a>
+    </div>
+
+    <script>
+        // Function to display cart items
+        function displayCart() {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            let cartItemsContainer = document.getElementById('cart-items');
+            let cartTotalContainer = document.getElementById('cart-total');
+            let total = 0;
+
+            cartItemsContainer.innerHTML = ''; // Clear the cart container
+
+            if (cart.length === 0) {
+                cartItemsContainer.innerHTML = '<p>Your cart is empty.</p>';
+            } else {
+                cart.forEach(item => {
+                    total += item.price * item.quantity;
+                    cartItemsContainer.innerHTML += `
+                        <div class="cart-item">
+                            <p><strong>${item.name}</strong> - Rs ${item.price} x ${item.quantity}</p>
+                        </div>
+                    `;
+                });
+            }
+
+            cartTotalContainer.textContent = total.toFixed(2);
+        }
+
+        // Function to clear the cart
+        function clearCart() {
+            localStorage.removeItem('cart');
+            displayCart();
+        }
+
+        // Initialize the cart display on page load
+        displayCart();
+    </script>
+</body>
+</html>

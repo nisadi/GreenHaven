@@ -21,8 +21,8 @@
         </div>
         <div class="menu-items">
             <ul>
-                <li><a href="home.php" class="link">Home</a></li>
-                <li><a href="#" class="link">Categories</a></li>
+            <li><a href="home.php" class="link">Home</a></li>
+                <li><a href="category.php" class="link">Categories</a></li>
                 <li><a href="aboutus.php" class="link active">About</a></li>
                 <li><a href="services.php" class="link">Services</a></li>
                 <li><a href="contactus.php" class="link">Contact</a></li>

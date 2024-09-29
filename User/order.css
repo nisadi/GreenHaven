@@ -1,0 +1,135 @@
+/* Form Styles */
+.order-edit-form {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 20px; /* Provides some spacing between the table and form */
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    position: relative;
+}
+
+.order-edit-form h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Styling the labels and inputs */
+.order-edit-form label {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.order-edit-form input[type="text"],
+.order-edit-form input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.order-edit-form input[type="text"]:focus,
+.order-edit-form input[type="date"]:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Button styling */
+.order-edit-form .btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.order-edit-form .btn:hover {
+    background-color: #218838;
+}
+
+/* Scrollable container for both table and form */
+.scrollable-container {
+    overflow-y: auto;
+    height: calc(100vh - 20px); /* Adjust height as necessary */
+}
+
+
+/* Customer edit form */
+/* Form Styles */
+.customer-edit-form {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 20px; /* Provides some spacing between the table and form */
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    position: relative;
+}
+
+.customer-edit-form h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Styling the labels and inputs */
+.customer-edit-form label {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.customer-edit-form input[type="text"],
+.customer-edit-form input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.customer-edit-form input[type="text"]:focus,
+.customer-edit-form input[type="date"]:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Button styling */
+.customer-edit-form .btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.customer-edit-form .btn:hover {
+    background-color: #218838;
+}
+
+/* Scrollable container for both table and form */
+.scrollable-container {
+    overflow-y: auto;
+    height: calc(100vh - 20px); /* Adjust height as necessary */
+}

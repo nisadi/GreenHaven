@@ -111,28 +111,27 @@ header .logout:hover {
     color: #27AE60;
 }
 
-.table_heading{
+/* Table Styles */
+.table_heading {
     margin-left: 50px;
 }
 
 table, th, td {
     margin-left: 50px;
     width: 75vw;
-    height: 3vh;
     padding: 1rem;
     box-shadow: 0.1rem .1rem #fff;
     border-radius: 5px;
+    background-color: #f0f0f0;
+}
+
+
+.table_body {
+    margin-top: 25px; /* Adds space below the fixed table */
     overflow: hidden;
 }
 
-.table_body{
-    overflow: auto;
-    position: sticky;
-    top: 0;
-    left: 0;
-}
-
-tbody tr:hover{
+tbody tr:hover {
     background-color: #bebebe;
 }
 
@@ -160,3 +159,4 @@ tbody tr:hover{
     background-color: #cf7878;
     color: #411212;
 }
+

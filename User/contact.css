@@ -37,7 +37,7 @@ body {
 .top-nav .menu-items ul {
     display: flex;
     list-style: none;
-    margin-left: 475px;
+    margin-left: 300px;
 }
 
 .top-nav .menu-items ul li {
@@ -48,11 +48,11 @@ body {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
-    margin-right: 50px;
+    margin-right: 5px;
 }
 
 .nav-buttons .btn {
-    width: 100px;
+    width: 150px;
     height: 35px;
     background: #4abb79;
     border: none;
