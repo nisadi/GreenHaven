@@ -21,7 +21,10 @@
                 <li><a href="services.php" class="link">Services</a></li>
                 <li><a href="contactus.php" class="link">Contact</a></li>
                 <li><a href="#" class="link"><i class="fa-solid fa-cart-shopping"></i></li></a>
-                <li><a href="profile.php" class="link"><i class="fa-solid fa-user"></i></li></a>
+                <form action="customer.php" method="GET">
+                        <input type="hidden" name="edit_id" value="<?php echo $row['Customer_ID']; ?>">
+                        <li><a href="profile.php" class="link"><i class="fa-solid fa-user"></i></li></a>
+                </form>
             </ul>
         </div>
         <div class="nav-buttons">

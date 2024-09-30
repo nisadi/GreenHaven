@@ -22,7 +22,7 @@
                 <li><a href="aboutus.php" class="link active">About</a></li>
                 <li><a href="services.php" class="link">Services</a></li>
                 <li><a href="contactus.php" class="link">Contact</a></li>
-                <li><a href="#" class="link"><i class="fa-solid fa-cart-shopping"></i></li></a>
+                <li><a href="cart.html" class="link"><i class="fa-solid fa-cart-shopping"></i></li></a>
                 <li><a href="profile.php" class="link"><i class="fa-solid fa-user"></i></li></a>
             </ul>
         </div>

@@ -12,35 +12,19 @@
 // Start session and connect to the database
 session_start();
 include '../include/connection.php';
-
-// Handle connection error
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
-}
-
-// Check if the session variables are set
-if (!isset($_SESSION['email'])) {
-    // If session is not set, redirect to login
-    header('Location: login.php');
-    exit();
-}
-
-// Retrieve the email from the session
-$email = $_SESSION['email'];
-
-// Get user data based on the session email
-$query = "SELECT * FROM `user1` WHERE email='$email'";
-$result = mysqli_query($conn, $query);
-
-// Check if query returned a result
-if ($result) {
-    $user = mysqli_fetch_assoc($result); // Fetch user data
-} else {
-    echo "Error retrieving user data: " . mysqli_error($conn);
-    exit();
-}
-
 ?>
+
+<?php
+if (isset($_get['edit_id'])) {
+    $email = $_POST["edit_id"];
+    // This get for find the update row
+    $_SESSION['email'] = $id;
+
+    $sql = "SELECT * FROM student WHERE email = '$email'";
+    $result = mysqli_query($conn, $sql);
+
+    foreach ($result as $row) {
+        ?>
     <div class="main-content">
         <header>
             <h1>Welcome, <?php echo htmlspecialchars($user['fname']); ?> (Profile)</h1>
@@ -77,8 +61,11 @@ if ($result) {
                 <button type="submit" name="update_user_btn" class="btn btn-success">Update Profile</button>
             </form>
         </section>
+        <?php
+    }
+    }
+    ?>
     </div>
-
     <?php mysqli_close($conn); // Close the connection ?>
 </body>
 </html>

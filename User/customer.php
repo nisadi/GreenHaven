@@ -130,11 +130,11 @@ $result = mysqli_query($conn, $sql);
             <th>Email</th>
             <th>Password</th>
             <th>Edit</th>
-            <th>Actions</th>
+            <th>Action</th>
         </tr>
     </thead>
     <tbody>
-        
+
     <?php
     if (mysqli_num_rows($result) > 0) {
         while ($row = mysqli_fetch_assoc($result)) {
